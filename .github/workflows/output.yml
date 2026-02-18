@@ -5,4 +5,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Output comment
-              run: echo "Comment: ${{ toJSON(github.event) }}"
+              run: |
+                echo "Comment: ${{ toJSON(github.event) }}"
