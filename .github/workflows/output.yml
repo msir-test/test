@@ -1,0 +1,8 @@
+name: Output
+on: issue_comment
+jobs:
+    output:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output comment
+              run: echo "Comment: ${{ github.event.comment.body }}"
